@@ -1,10 +1,10 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "11dc19ae1bd8fd0737fec254fc20f7de",
+    "content-hash": "ad8bcdea570b867ab3a2e71ece3d17dc",
     "packages": [
         {
             "name": "bower-asset/bootstrap",
@@ -74,7 +74,7 @@
             "version": "v1.3.2",
             "source": {
                 "type": "git",
-                "url": "https://github.com/bestiejs/punycode.js.git",
+                "url": "git@github.com:bestiejs/punycode.js.git",
                 "reference": "38c8d3131a82567bfef18da09f7f4db68c84f8a3"
             },
             "dist": {
@@ -267,6 +267,40 @@
                 "mailer"
             ],
             "time": "2018-01-23T07:37:21+00:00"
+        },
+        {
+            "name": "umbalaconmeogia/yii2-rubytag",
+            "version": "dev-master",
+            "dist": {
+                "type": "path",
+                "url": "../../yii2-rubytag",
+                "reference": "58e0a05ebce08a80bc2933d292f80adb2c02eba0",
+                "shasum": null
+            },
+            "type": "yii2-extension",
+            "autoload": {
+                "psr-4": {
+                    "umbalaconmeogia\\yii2-rubytag\\": "src/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Tran Trung Thanh",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Display Japanese document with Furigata (ruby text), text direction (vertical or horizontal).",
+            "keywords": [
+                "extension",
+                "rubytag",
+                "yii2"
+            ],
+            "transport-options": {
+                "symlink": true
+            }
         },
         {
             "name": "yiisoft/yii2",
@@ -3230,7 +3264,9 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {
+        "umbalaconmeogia/yii2-rubytag": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
